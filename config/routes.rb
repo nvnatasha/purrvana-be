@@ -16,7 +16,7 @@ Rails.application.routes.draw do
         get 'most_used_cat', to: 'user_cats#most_used'
       end
 
-      resources :cats, only: [:index, :show] 
+      resources :cats
       resources :sessions, only: [:index, :show, :create]
       resources :daily_wisdom, only: [:index, :show]
     end
