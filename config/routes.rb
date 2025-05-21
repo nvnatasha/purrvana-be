@@ -7,4 +7,19 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  namespace :api do
+    namespace :v1 do
+      resources :users, only: [:index, :show, :create] do
+        resources :user_cats, only: [:index, :show]
+
+        get 'most_used_cat', to: 'user_cats#most_used'
+      end
+
+      resources :cats, only: [:index, :show] 
+      resources :sessions, only: [:index, :show, :create]
+      resources :daily_wisdom, only: [:index, :show]
+    end
+  end
+
 end
