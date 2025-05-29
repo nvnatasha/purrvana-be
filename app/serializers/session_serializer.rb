@@ -6,8 +6,11 @@ class SessionSerializer
                     id: session.id.to_s,
                     type: 'session',
                     attributes: {
+                        user_id: session.user_id,
+                        cat_id: session.cat_id,
                         duration_seconds: session.duration_seconds,
-                        started_at: session.started_at
+                        started_at: session.started_at,
+                        ended_at: session.ended_at
                     }
                 }
             end
@@ -21,8 +24,11 @@ class SessionSerializer
                     id: session.id.to_s,
                     type: 'session',
                     attributes: {
+                        user_id: session.user_id,
+                        cat_id: session.cat_id,
                         duration_seconds: session.duration_seconds,
-                        started_at: session.started_at
+                        started_at: session.started_at,
+                        ended_at: session.ended_at
                     }
                 }
         }

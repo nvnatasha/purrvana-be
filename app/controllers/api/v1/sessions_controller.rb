@@ -10,10 +10,15 @@ class Api::V1::SessionsController < ApplicationController
         render json: SessionSerializer.format_session(session)
     end
 
+    def create
+        session = Session.create!(session_params)
+        render json: SessionSerializer.format_session(session), status: :created
+    end
+
     private
 
     def session_params
-        params.require(:session).permit(:duration_seconds, :started_at)
+        params.require(:session).permit(:user_id, :cat_id, :duration_seconds, :started_at, :ended_at)
     end
 
 end
