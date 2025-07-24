@@ -15,38 +15,44 @@ cats = [
     {
       name: 'Duchess Marie',
       mood: 'Sleepy',
-      purr_style: '/sounds/duchessmarie-purr.wav',
-      img_url: "/images/DuchessMarie.webp"
+      purr_style: 'Gentle hum',
+      img_url: "/images/DuchessMarie.webp",
+      purr_sound_url: '/sounds/duchessmarie-purr.wav'
     },
     {
       name: 'Kylo',
       mood: 'Relaxed',
       purr_style: '/sounds/kylo-purr.wav',
-      img_url: "/images/kylo.gif"
+      img_url: "/images/kylo.gif",
+      purr_sound_url: '/sounds/kylo-purr.wav'
     },
     {
       name: 'Stormy',
       mood: 'Neutral',
-      purr_style: '/sounds/stormy-purr.wav',
-      img_url: "/images/stormy.gif"
+      purr_style: 'Balanced wave',
+      img_url: "/images/stormy.gif",
+      purr_sound_url: '/sounds/stormy-purr.wav'
     },
     {
       name: 'Toulouse',
       mood: 'Frisky',
-      purr_style: '/sounds/toulouse-purr.wav',
-      img_url: "/images/toulouse.gif"
+      purr_style: 'Bouncy rhythm',
+      img_url: "/images/toulouse.gif",
+      purr_sound_url: '/sounds/toulouse-purr.wav'
     },
     {
       name: 'Emmy',
       mood: 'Spicy',
-      purr_style: '/sounds/emmy-purr.wav',
-      img_url: "/images/Emmy.gif"
+      purr_style: 'Sharp vibrato',
+      img_url: "/images/Emmy.gif",
+      purr_sound_url: '/sounds/emmy-purr.wav'
     },
     {
       name: 'Mr. Kato',
       mood: 'Cheerful',
-      purr_style: '/sounds/kato-purr.wav',
-      img_url: "/images/mrKato.webp"
+      purr_style: 'Melodic trill',
+      img_url: "/images/mrKato.webp",
+      purr_sound_url: '/sounds/kato-purr.wav'
     }]
 
 cats.each do |cat|
