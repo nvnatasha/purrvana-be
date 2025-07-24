@@ -15,40 +15,39 @@ cats = [
     {
       name: 'Duchess Marie',
       mood: 'Sleepy',
-      purr_style: 'Gentle hum',
-      img_url: 'https://media.giphy.com/media/XKfEhT0PHSzKMbUBZj/giphy.gif'
+      purr_style: '/sounds/duchessmarie-purr.wav',
+      img_url: "/images/DuchessMarie.webp"
     },
     {
       name: 'Kylo',
       mood: 'Relaxed',
-      purr_style: 'Low rumble',
-      img_url: 'https://media.tenor.com/mGC7-NWoVZsAAAAi/siamese-cat.gif'
+      purr_style: '/sounds/kylo-purr.wav',
+      img_url: "/images/kylo.gif"
     },
     {
       name: 'Stormy',
       mood: 'Neutral',
-      purr_style: 'Balanced wave',
-      img_url: 'https://media.tenor.com/qaNo17mV6JcAAAAi/cute.gif'
+      purr_style: '/sounds/stormy-purr.wav',
+      img_url: "/images/stormy.gif"
     },
     {
       name: 'Toulouse',
       mood: 'Frisky',
-      purr_style: 'Bouncy rhythm',
-      img_url: 'https://media.tenor.com/jXWlf9y2i1IAAAAi/ginger-cat-cat.gif'
+      purr_style: '/sounds/toulouse-purr.wav',
+      img_url: "/images/toulouse.gif"
     },
     {
       name: 'Emmy',
       mood: 'Spicy',
-      purr_style: 'Sharp vibrato',
-      img_url: 'https://gifdb.com/images/high/scratch-pad-cartoon-tabby-cat-4lk0rv3hledc1la4.gif'
+      purr_style: '/sounds/emmy-purr.wav',
+      img_url: "/images/Emmy.gif"
     },
     {
       name: 'Mr. Kato',
       mood: 'Cheerful',
-      purr_style: 'Melodic trill',
-      img_url: 'https://image.shutterstock.com/image-vector/vector-character-egyptian-mau-cat-kawaii-260nw-1344755234.jpg'
-    }
-  ]
+      purr_style: '/sounds/kato-purr.wav',
+      img_url: "/images/mrKato.webp"
+    }]
 
 cats.each do |cat|
   Cat.create!(cat)
