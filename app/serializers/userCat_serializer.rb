@@ -45,7 +45,6 @@ class UserCatSerializer
                         times_used: user_cat.times_used
                     }
                 }
-            end
         }
     end
 end
