@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
     allow do
-      origins 'http://localhost:5173', 'https://purvanna.netlify.app'  # ✅ Add Netlify domain here
+      origins 'http://localhost:5173', 'https://purrvana.netlify.app'  # ✅ Add Netlify domain here
   
       resource '*',
         headers: :any,
