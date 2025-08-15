@@ -6,13 +6,13 @@
 # Read more: https://github.com/cyu/rack-cors
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
-allow do
-    origins 'http://localhost:5173', 'https://your-frontend-url.onrender.com'
-
-
-    resource "*",
+    allow do
+      origins 'http://localhost:5173', 'https://purvanna.netlify.app'  # ✅ Add Netlify domain here
+  
+      resource '*',
         headers: :any,
-        expose: ['Authorization'],
-        methods: [:get, :post, :put, :patch, :delete, :options, :head]
+        methods: [:get, :post, :patch, :put, :delete, :options, :head],
+        expose: ['Authorization']  # expose headers if needed
     end
-end
+  end
+  
