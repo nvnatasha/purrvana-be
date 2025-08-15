@@ -45,7 +45,7 @@ ActiveRecord::Schema[7.2].define(version: 2025_07_24_215326) do
   create_table "user_cats", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.bigint "cat_id", null: false
-    t.integer "times_used"
+    t.integer "times_used", default: 0, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["cat_id"], name: "index_user_cats_on_cat_id"

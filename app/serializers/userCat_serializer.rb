@@ -25,7 +25,7 @@ class UserCatSerializer
         }
     end
 
-    def self.format_user_cat(cat)
+    def self.format_user_cat(user_cat)
         {
             data:
                 {

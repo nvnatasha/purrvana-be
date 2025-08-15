@@ -3,12 +3,14 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
+      post '/login', to: 'auth#create'
+      get '/users/me', to: 'users#me'
+      get 'wisdom', to: 'wisdom#show'
       resources :users, only: [:index, :show, :create] do
         resources :user_cats, only: [:index, :show]
         get 'most_used_cat', to: 'user_cats#most_used'
       end
 
-      post '/login', to: 'auth#create'
       resources :sessions, only: [:index, :show, :create]
       resources :cats, only: [:index, :show]
       resources :daily_wisdom, only: [:index, :show]

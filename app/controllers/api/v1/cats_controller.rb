@@ -1,6 +1,5 @@
 class Api::V1::CatsController < ApplicationController
     rescue_from ActiveRecord::RecordNotFound, with: :record_not_found
-    
     def index
         cats = Cat.all
         render json: CatSerializer.format_cats(cats)

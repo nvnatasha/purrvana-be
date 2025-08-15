@@ -22,7 +22,7 @@ cats = [
     {
       name: 'Kylo',
       mood: 'Relaxed',
-      purr_style: '/sounds/kylo-purr.wav',
+      purr_style: 'Low rumble',
       img_url: "/images/kylo.gif",
       purr_sound_url: '/sounds/kylo-purr.wav'
     },
