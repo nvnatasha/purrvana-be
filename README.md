@@ -1,4 +1,3 @@
-
 ---
 
 ### 📁 `purrvana-be/README.md`
@@ -13,6 +12,7 @@ This is the Ruby on Rails API backend for **Purrvana**, a cat-themed meditation 
 - **Ruby on Rails** (API-only)
 - **PostgreSQL** database
 - **JWT Authentication**
+
 
 ## 🧩 Endpoints
 
@@ -32,16 +32,14 @@ cd purrvana-be
 bundle install
 rails db:create db:migrate db:seed
 rails s
-```
+
 
 🔐 Authentication
-
 JWT tokens are issued upon login and must be passed in headers for protected routes:
 
+
 Authorization: Bearer <token>
-
 🐈 Data Models
-
 User: has many sessions
 
 Cat: preset cat companions
