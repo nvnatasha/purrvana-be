@@ -9,6 +9,9 @@
 #   end
 
 
+UserCat.destroy_all
+Session.destroy_all
+User.destroy_all
 Cat.destroy_all
 
 cats = [
@@ -61,9 +64,6 @@ end
 
 puts "🌟 Seeded #{Cat.count} cat companions!"
 
-User.destroy_all
-Session.destroy_all
-UserCat.destroy_all
 
 user1 = User.create!(
   name: "Natasha",
