@@ -80,6 +80,5 @@ test:
 #
 production:
   <<: *default
-  database: purrvana_be_production
-  username: purrvana_be
-  password: <%= ENV["PURRVANA_BE_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
+
